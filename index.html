@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario sem BackEnd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+<body>
+    <header class="header">
+        <div class="headerContainer">
+            <h1 class="header-title">Formulario sem <span>BackEnd</span></h1>
+            <!-- <ul class="header-list">
+                <li class="header-list-item"><a class="header-list-link" href="#">Home</a></li>
+                <li class="header-list-item"><a class="header-list-link" href="#">Home</a></li>
+                <li class="header-list-item"><a class="header-list-link" href="#">Home</a></li>
+            </ul> -->
+        </div>
+    </header>
+    <section class="formulario">
+        <form action="https://formsubmit.co/luangaldinodev@gmail.com" method="post" class="form">
+            <h2 class="formulario-title">Formulario de <span>Contato</span></h2>
+            <label class="formulario-label" for="nome">Seu nome:</label>
+            <input required class="formulario-input" type="text" name="nome" id="nome">
+            <label class="formulario-label" for="email">Seu E-mail:</label>
+            <input required class="formulario-input" type="email" name="email" id="email">
+            <label class="formulario-label" for="assunto">Assunto:</label>
+            <input class="formulario-input" type="text" name="assunto" id="assunto">
+            <label class="formulario-label" for="mensagem">Mensagem:</label>
+            <textarea required minlength="20"  class="formulario-input" name="mensagem" id="mensagem"></textarea>
+            <input class="formulario-enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+        </form>
+    </section>
+</body>
+</html>
