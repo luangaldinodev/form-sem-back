@@ -11,14 +11,10 @@
     <header class="header">
         <div class="headerContainer">
             <h1 class="header-title">Formulario sem <span>BackEnd</span></h1>
-            <!-- <ul class="header-list">
-                <li class="header-list-item"><a class="header-list-link" href="#">Home</a></li>
-                <li class="header-list-item"><a class="header-list-link" href="#">Home</a></li>
-                <li class="header-list-item"><a class="header-list-link" href="#">Home</a></li>
-            </ul> -->
         </div>
     </header>
     <section class="formulario">
+        <!-- Mude o action para o email desejado -->
         <form action="https://formsubmit.co/luangaldinodev@gmail.com" method="post" class="form">
             <h2 class="formulario-title">Formulario de <span>Contato</span></h2>
             <label class="formulario-label" for="nome">Seu nome:</label>
@@ -30,9 +26,10 @@
             <label class="formulario-label" for="mensagem">Mensagem:</label>
             <textarea required minlength="20"  class="formulario-input" name="mensagem" id="mensagem"></textarea>
             <input class="formulario-enviar" type="submit" value="Enviar">
-            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+            <!-- Volta do envio do formulário -->
+            <input type="hidden" name="_next" value="https://formsemback.netlify.app/obrigado.html">
+            <!-- Auto Resposta de email -->
             <input type="hidden" name="_autoresponse" value="Agradecemos o seu contato! Assim que possivel retornaremos. Luan Galdino.">
-            <!-- <input type="hidden" name="_captcha" value="false"> -->
         </form>
     </section>
 </body>
